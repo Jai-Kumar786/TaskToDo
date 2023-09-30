@@ -1,0 +1,68 @@
+.new-task {
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 30rem;
+  text-align: center;
+  border-radius: 10%;
+  background-image: url("C:\Users\DELL\Documents\React\To Do\public\todo.jpg");
+  padding: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.new-task__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.new-task__control {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-task__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #266303;
+}
+
+.new-task__control input,
+.new-task__control select {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  transition: border-color 0.2s;
+  background-color: #f7f7f7;
+}
+
+.new-task__control input:focus,
+.new-task__control select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.new-task__actions {
+  text-align: right;
+}
+
+.new-task__actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  margin-left: 1rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.new-task__actions button:hover {
+  background-color: #555;
+}
