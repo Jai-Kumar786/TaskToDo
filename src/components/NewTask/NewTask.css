@@ -2,13 +2,11 @@
   margin: 1rem auto;
   width: 90%;
   max-width: 30rem;
+  border: 5px solid red;
   text-align: center;
   border-radius: 10%;
-  /* background-image: url("C:\Users\DELL\Documents\React\To Do\public\todo.jpg"); */
+
   padding: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .new-task__controls {
@@ -26,7 +24,7 @@
 .new-task__control label {
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #266303;
+  color: #5abdff;
 }
 
 .new-task__control input,
@@ -56,7 +54,7 @@
   cursor: pointer;
   padding: 0.5rem 1.5rem;
   border: none;
-  background-color: #333;
+  background-color: #1a0ec7;
   color: white;
   border-radius: 4px;
   margin-left: 1rem;
