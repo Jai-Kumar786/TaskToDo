@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NewTask from "./components/NewTask/NewTask";
 import Tasks from "./components/Tasks/Tasks";
-
+import "./header.css";
 const DUMMY_TASKS = [
   {
     id: "e1",
@@ -25,7 +25,14 @@ const DUMMY_TASKS = [
     priority: "important",
   },
 ];
-
+function Header() {
+  return (
+    <header className="header">
+      <h1>TO DO TASK LIST</h1>
+      <p>Make your plans here</p>
+    </header>
+  );
+}
 const App = () => {
   const [tasks, setTasks] = useState(DUMMY_TASKS);
 
@@ -42,6 +49,7 @@ const App = () => {
 
   return (
     <div>
+      <Header />
       <NewTask onAddTask={addTaskHandler} />
       <Tasks items={tasks} onRemove={removeTaskHandler} />
     </div>
